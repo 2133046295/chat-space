@@ -64,11 +64,7 @@
 position: relative;
 }
 .input-box {
-  // display: flex;
-  
-  // width: 100%;
-  // position: relative;
-  &__text {
+ &__text {
     height: 50px;
     width: 100%;
     color: #434a54;
@@ -97,6 +93,7 @@ position: relative;
 cursor: pointer;
 }
 
+  
 
 
   
