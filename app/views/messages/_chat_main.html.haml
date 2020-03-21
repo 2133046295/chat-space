@@ -1,17 +1,13 @@
 .chat-main
-  .chat-main__main-header
-    .chat-main__main-header__left-box
-      1234
-      .chat-main__main-header__left-box__member-list
-        user name
-    .chat-main__main-header__edit
-      Edit
-  .chat-main__chat-messages
-    .chat-main__chat-messages__messages2
-      .chat-main__chat-messages__messages2__upper-info
-        .chat-main__chat-messages__messages2__upper-info__text
-    
-  
+   .form
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+        .form__mask
+          = f.label :image, class: 'form__mask__image' do
+            = icon('fas', 'image', class: 'icon')
+            = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'form__submit'
+ 
   .from
     %from.new_message
       %input{type: "text", class: "input-box__text", placeholder: "type a message"}
@@ -19,12 +15,3 @@
           = icon('fas','image')
           %input{type: "file", class: "input-box__image__file"}
       %input{type: "submit", class: "submit-btn"}
-
-
-
-
-
-    
- 
-      
-      
