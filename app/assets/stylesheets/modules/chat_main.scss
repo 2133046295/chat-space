@@ -4,7 +4,7 @@
   
   background-color: #fafafafa;
  
-  &__main-header {
+  .main-header {
     height: 100px;
     padding: 0 40px;
     display: flex;
@@ -12,18 +12,18 @@
     border-bottom: solid 1px #eee;
     overflow: scroll;
     background-color: paleturquoise;
-    &__left-box {
+    .main-header-box {
     margin-top: 35px;
     font-size: 20px;
     color: #333;
     margin-bottom: 15px;
-      &__member-list {
+      .menber {
         display: flex;
         font-size: 12px;
         color: #999999;
       }
     }
-    &__edit{
+    .edit-box{
       height: 40px;
       line-height: 40px;
       padding: 0 20px;
@@ -33,18 +33,18 @@
       right: 40px;
     }
   }
-}
-  .chat-main__chat-messages {
+
+  .messages {
     height: calc(100vh - 190px);
     padding: 46px 40px;
     background-color: #fafafa;
     overflow: scroll;
-      &__message2 {
+      .messages {
         padding-bottom: 40px;
-          &__upper-info {
+          .upper-info {
             display: flex;
             margin-bottom: 10px;
-            &__text {
+            .text {
               color: #434a54;
               font-size: 14px;
               margin-bottom: 10px;
@@ -53,46 +53,50 @@
        }
      }
 
-.from{
-  height: 90px;
-  background-color: #d2d2d2;
-  padding: 20px 40px;
-}
-.new_message{
-  display: flex;
-  width: 100%;
-position: relative;
-}
-.input-box {
- &__text {
-    height: 50px;
-    width: 100%;
-    color: #434a54;
-    border-style: none;  
-    padding: 0 40px 0 10px;
-  }
-  &__image {
-    position: absolute;
-    top: 10px;
-    right: 130px;
-    cursor: pointer;
-    font-size: 1.3rem;
-&__file {
-      display: none;
+  .form{
+    height: 90px;
+    background-color: #d2d2d2;
+    padding: 20px 40px;
+
+    .new_message{
+      display: flex;
+      width: 100%;
+    position: relative;
+
+      .form__box {
+      .form__message {
+          height: 50px;
+          width: 380%;
+          color: #434a54;
+          border-style: none;  
+          padding: 0 40px 0 10px;
+        }
+      }
+      .form__mask{
+        .form__mask__image {
+         background-color: white;
+          position: absolute;
+          top: 10px;
+          right: 150px;
+          cursor: pointer;
+          font-size: 1.3rem;
+          .hidden {
+            display: none;
+          }
+        }
+      }
+      .form__submit {
+        width: 100px;
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 615px;
+        background-color: #38aef0;
+        color: white;
+        cursor: pointer;
+      }
     }
   }
 }
-.submit-btn {
-  width: 100px;
-  height: 50px;
-  padding: 0 30px;
-  margin-left: 15px;
-  background-color: #38aef0;
-  color: white;
-  cursor: pointer;
-}
-    
-
   
 
 
