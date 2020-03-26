@@ -8,8 +8,7 @@ $(function() {
     `;
     $("#user-search-result").append(html);
   }
-
-  function addNoUser() {
+function addNoUser() {
     let html = `
       <div class="chat-group-user clearfix">
         <p class="chat-group-user__name">ユーザーが見つかりません</p>
@@ -38,9 +37,7 @@ $(function() {
       dataType: "json"
     })
       .done(function(users) {
-        $("#user-search-result").empty();
-
-        if (users.length !== 0) {
+         if (users.length !== 0) {
           users.forEach(function(user) {
             addUser(user);
           });
@@ -69,3 +66,6 @@ $(function() {
       .remove();
   });
 });
+  $("#user-search-result").empty();
+
+       
