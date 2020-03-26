@@ -30,10 +30,11 @@
     height: calc(100vh - 100px);
     padding: 20px;
     .group {
+      margin-bottom: 40px;
+    }
+    a{
       color: white;
       text-decoration: none;
-      margin-bottom: 40px;
-  
     }
   }
 }
