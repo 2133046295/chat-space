@@ -1,14 +1,11 @@
 .chat-main {
   height: 100vh;
   width: calc(100vw - 300px);
-  
   .main-header {
     height: 100px;
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
-    //border-bottom: solid 1px #eee;
-    //overflow: scroll;
     background-color: #ffffff;
     .main-header-box {
       margin-top: 35px;
@@ -18,7 +15,6 @@
         margin-bottom: 15px;
       }
       .menber {
-        //display: flex; 
         font-size: 12px;
         color: #999999;
       }
@@ -93,7 +89,6 @@
           margin-left: 15px;
           background-color: #38aef0;
           color: white;
-          // cursor: pointer;
         }
       }
   }

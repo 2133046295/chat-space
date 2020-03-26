@@ -1,6 +1,5 @@
 $(function(){ 
   var buildHTML = function(message) {
-    console.log(message);
     if (message.content && message.image) {
       var html = `<div class="message" data-message-id=${message.id}>
         <div class="upper-message">
@@ -91,7 +90,6 @@ $(function(){
     var insertHTML = '';
     $.each(messages, function(i, message) {
       insertHTML += buildHTML(message)
-      console.log(insertHTML);
     });
     $('.messages').append(insertHTML) ;
     $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
