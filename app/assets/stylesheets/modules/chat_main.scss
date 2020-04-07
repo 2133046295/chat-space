@@ -10,7 +10,7 @@
     .main-header-box {
       margin-top: 35px;
       .groupname{
-        font-size: 20px;
+        font-size: 15px;
         color: #333;
         margin-bottom: 15px;
       }
@@ -40,7 +40,7 @@
     padding: 46px 40px;
     background-color: #fafafa;
     overflow: scroll;
-      .messages {
+      .message {
         padding-bottom: 40px;
           .upper-info {
             display: flex;
@@ -72,6 +72,7 @@
     background-color: #d2d2d2;
     padding: 20px 40px;
    .new_message{
+      padding-bottom: 40;
       display: flex;
      .form__box {
         width: 100%;
